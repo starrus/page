@@ -1,135 +1,48 @@
-* {
-	/* Это свойство не всегда нужно для всех элементов. */
+html,
+body {
 	margin: 0;
 	padding: 0;
 }
 
-body {
-	/* Зачем тут line-height  */
-	background-color: white;
+.head{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 20px;
+	background-color: black;
 }
 
-.menu {
-	background-color: white;
-	/*border: 1px solid black;*/
-	text-transform: uppercase;
+.title{
+    font-size: 48px;
+    font-weight: bold;
+    padding: 10px;
 }
 
-.menu a {
+.navbar{
+    font-size: 24px;
+    padding: 22px 10px;
+    word-spacing: 30px;
+}
+
+.title a,
+.navbar a{
 	text-decoration: none;
-	color: navy;
+    color: white;
 }
 
-.logo {
-	font-size: 48px;
-	letter-spacing: 2px;
+.navbar a:hover{
+	font-size: 28px;
 }
 
-/* nav-item поскольку ты описываешь единичный элемент*/
-
-.nav-items {
-	list-style-type: none;
-	letter-spacing: 2px;
-	font-size: 24px;
-}
-
-.nav-items a:hover {
-	color: aqua;
-}
-
-.menu,
-.nav {
-	display: flex;
-}
-.logo-image {
-	width: 1300px;
-	margin: 20px;
-
-}
-
-.logo-img {
-	max-width: 100%;
-	height: auto;
-}
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px
-*/
-
-@media (min-width: 1025px) {
-	.menu,
-	.portfolio-images {
-		flex-flow: row wrap;
-		justify-content: center;
-	}
-	.logo {
-		padding: 10px 20px;
-	}
-	.nav-items {
-		padding: 25px 20px;
-	}
-}
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-	.menu,
-	.portfolio-images {
-		flex-direction: column;
-		align-items: center;
-	}
-	.logo {
-		padding: 5px 20px;
-	}
-	.nav-items {
-		padding: 5px 20px;
-	}
-}
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 320px) and (max-width: 767px) {
-	.menu,
-	.nav,
-	.portfolio-images {
-		flex-direction: column;
-		align-items: center;
-	}
-	.logo {
-		padding: 0;
-	}
-	.nav-items {
-		padding: 0;
-	}
-}
-
-.project {
+.same-head{
+	position: relative;
 	text-transform: uppercase;
-	letter-spacing: 20px;
-	color: navy;
-	font-size: 24px;
-	text-align: center;
-	padding: 20px;
+	letter-spacing: 2px;
 }
 
-.portfolio-images {
-	display: flex;
+.title-image{
+	min-width: 1250px;
 }
-
-.image {
-	width: 400px;
-	margin: 20px;
-	border: 1px solid black;
-	padding: 5px;
-	box-sizing: border-box;
-}
-.project-img {
+.title-image img{
 	width: 100%;
 }
