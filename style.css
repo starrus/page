@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
+/* Heading */
 .head{
 	display: flex;
 	flex-direction: row;
@@ -34,7 +34,7 @@ body {
 	font-size: 28px;
 }
 
-.same-head{
+.head-items{
 	position: relative;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -46,3 +46,35 @@ body {
 .title-image img{
 	width: 100%;
 }
+
+/* Portfolio Content */
+
+.portfolio{
+
+}
+
+.portfolio h2{
+	font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.portfolio-content{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.projects{
+	width: 600px;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 10px;
+	box-sizing: border-box;
+}
+
+.projects img{
+	width: 100%;
+}
+
