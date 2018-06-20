@@ -40,6 +40,7 @@ body {
 	letter-spacing: 2px;
 }
 
+/* Image */
 .title-image{
 	min-width: 1250px;
 }
@@ -53,7 +54,8 @@ body {
 
 }
 
-.portfolio h2{
+.portfolio h2,
+.contact h2{
 	font-size: 36px;
     text-align: center;
     text-transform: uppercase;
@@ -63,11 +65,11 @@ body {
 .portfolio-content{
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 .projects{
-	width: 600px;
+	width: 700px;
 	border: 1px solid black;
 	padding: 10px;
 	margin: 10px;
@@ -78,3 +80,58 @@ body {
 	width: 100%;
 }
 
+/* contact section */
+
+
+
+.contact{
+	margin-bottom: 50px;
+}
+
+.form-content{
+	max-width: 800px;
+	padding: 10px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.form-content input[type="text"],
+.form-content input[type="email"]{
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	height: 50px;
+}
+
+.form-content textarea{
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+.form-content input[type="submit"]{
+	width: 25%;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+.form-items{
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 10px;
+}
+
+
+
+/* footer */
+
+.foot-content{
+	background-color: black;
+	padding: 20px;
+}
+
+.foot-content p{
+	color: white;
+	text-align: center;
+}
